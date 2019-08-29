@@ -90,7 +90,24 @@ ticketPriceTotal = runners.reduce((donate, runner) => donate + runner.donation, 
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// The director has decided that he needs to treat the big spenders differently. He wants to know the runners that donated 200 and above.
+let bigSpenders = [];
+
+runners.forEach(runner => {
+  if(runner.donation >= 200) {
+    bigSpenders.push(runner)
+  }
+})
+
+// console.log(bigSpenders)
 
 // Problem 2
+// The director looks at the big spender list and says he only wants the names of the organizations since they're the actual ones doing the spending.
+let bigSpendingOrganization = [];
+
+bigSpendingOrganization = bigSpenders.map(runner => runner.company_name)
+
+// console.log(bigSpendingOrganization)
 
 // Problem 3
+//The director then decided he wanted to know if the total amount donated by the little guys was enough to buy a cup of coffee

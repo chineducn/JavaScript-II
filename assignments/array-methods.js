@@ -111,3 +111,9 @@ bigSpendingOrganization = bigSpenders.map(runner => runner.company_name)
 
 // Problem 3
 //The director then decided he wanted to know if the total amount donated by the little guys was enough to buy a cup of coffee
+// let smallChange = 0;
+// smallChange = runners.reduce((change, runner) =>  {
+// if(runner.donation < 200){
+// return change + runner.donation, 0}})
+
+// console.log(smallChange)

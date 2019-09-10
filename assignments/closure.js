@@ -4,6 +4,25 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+let num1 = 78;
+let num5 = 45;
+
+let addUP = (num2, num3) => {
+  let num4 = num3 + num1;
+  return doneAdding = num4 * num1;
+}
+
+//This is possible because of the ability to look out from in
+// console.log(addUP(2,3));
+
+//This is possible because you can see things on the same level as you
+// console.log(num1);
+// console.log(num5);
+// console.log(addUP);
+
+//This is not possible because console.log cannot see inside addUP
+// console.log(num4)
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
